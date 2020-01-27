@@ -11,6 +11,8 @@ int main() {
 	srand(time(0));
 	int otv = 0;
 	do {
+		SetConsoleCP(1251);
+		SetConsoleOutputCP(1251);
 		fstream f;
 		f.open("static.txt", fstream::in | fstream::out | fstream::app);
 		string name;
